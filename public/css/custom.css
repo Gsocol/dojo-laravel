@@ -1,4 +1,7 @@
 html, body {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-family: Arial,"Helvetica Neue",Helvetica,sans-serif*/
+	/*font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif*/
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -6,6 +9,7 @@ html, body {
     padding: 0;
 }
 
-#mainPanel {
+#rootPanel {
     height: 100%;
 }
+

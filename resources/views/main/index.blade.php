@@ -27,11 +27,17 @@
 		};
 	</script>
 	<!-- load CSS dojo -->
-	<link rel="stylesheet" href="{{ URL::asset('/lib/dojo/dijit/themes/soria/soria.css') }} " media="screen">
-	<link rel="stylesheet" href="{{ URL::asset('/css/custom.css') }} " media="screen">
+	<link rel="stylesheet" href="{{ asset('lib/dojo/dojo/resources/dojo.css') }} " media="screen">
+	<link rel="stylesheet" href="{{ asset('lib/dojo/dijit/themes/dijit.css') }} " media="screen">
+
+	<link rel="stylesheet" href="{{ asset('lib/dojo/dijit/themes/soria/soria.css') }} " media="screen">
+	<!-- <link rel="stylesheet" href="{{ asset('lib/dojo/dijit/themes/claro/claro.css') }} " media="screen"> -->
+	<!-- <link rel="stylesheet" href="{{ asset('lib/dojo/dijit/themes/nihilo/nihilo.css') }} " media="screen"> -->
+	<!-- <link rel="stylesheet" href="{{ asset('lib/dojo/dijit/themes/tundra/tundra.css') }} " media="screen"> -->
+	<link rel="stylesheet" href="{{ asset('css/custom.css') }} " media="screen">
 
 	<!-- load dojo -->
-    <script type="text/javascript" src="{{ URL::asset('/lib/dojo/dojo/dojo.js') }}" data-dojo-config="async: true"></script>
+    <script type="text/javascript" src="{{ asset('lib/dojo/dojo/dojo.js') }}" data-dojo-config="async: true"></script>
     <script type="text/javascript">
     	require(["dojo/dom", "dojo/domReady!", "app/startup/Startup"], function(dom, dojoReady, Startup){
 			var main = new Startup();
@@ -40,6 +46,6 @@
     </script>
 </head>
 <body class="soria">
-	<div id="mainPanel"></div>
+	<div id="rootPanel"></div>
 </body>
 </html>
